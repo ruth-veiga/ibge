@@ -20,6 +20,8 @@ from django.urls import path
 from core import views
 urlpatterns =[
     path('admin/', admin.site.urls),
-    path('pessoas/', views.lista_pessoas)
+    path('pessoas/', views.lista_pessoas),
+    path('cadastrar_pessoa/', views.cadastrar_pessoa, name='cadastrar_pessoa')
+    
 ]
 
