@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <table class="table">
+        <tr>
+            <th>Nome</th>
+            <th>Cor</th>
+            <th>Idade</th>
+            <th>Gênero</th>
+            <th>Salário</th>
+        </tr>
+        {% for pessoa in pessoas %}
+        <tr>
+            <td>{{pessoa.nome}}</td>
+            <td>{{pessoa.cor}}</td>
+            <td>{{pessoa.idade}}</td>
+            <td>{{pessoa.genero}}</td>
+            <td>{{pessoa.salario}}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    
+</body>
+</html>
